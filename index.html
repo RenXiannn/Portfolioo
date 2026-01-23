@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div id="bg-shapes" class="bg-shapes"></div>
+    <nav>
+        <div class="nav-container">
+            <button class="logo" onclick="showPage('home')">ANG REN XIAN</button>
+            <div class="nav-links">
+                <button onclick="showPage('home')" data-page="home" class="active">Home</button>
+                <button onclick="showPage('work')" data-page="work">Projects</button>
+                <button onclick="showPage('gallery')" data-page="gallery">Gallery</button>
+                <button onclick="showPage('skills')" data-page="skills">Skills</button>
+                <button onclick="showPage('about')" data-page="about">About</button>
+                <button onclick="showPage('contact')" data-page="contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="page active">
+        <div class="container page-content active">
+            <div style="margin-bottom: 6rem;">
+                <h1>Hi i'm Ren Xian</h1>
+                <p style="max-width: 600px;">IT Application Development Student | Web Developer | Creating Practical and User-Friendly Digital Solutions</p>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-primary" onclick="showPage('work')">View My Work</button>
+                    <button class="btn btn-secondary" onclick="showPage('contact')">Get In Touch</button>
+                </div>
+            </div>
+            <div style="margin-bottom: 6rem;">
+                <h2>About Me</h2>
+                <div class="grid grid-2" style="align-items: center;">
+                    <div>
+                        <p>Hi! I'm Ang Ren Xian and I’m a Higher Nitec IT Application Development student at ITE, passionate about creating practical and user-friendly digital solutions. I enjoy combining design and development skills to build clean, functional interfaces that solve real problems.</p>
+                        <p>Through school projects and personal experiments, I’m developing my skills in web development, UI/UX design, and software applications. I believe in minimalism and intentional design to make technology both elegant and easy to use.</p>
+                        <button class="btn btn-link" onclick="showPage('about')">Learn More About Me <span>→</span></button>
+                    </div>
+                    <div style="border-radius: 1rem; overflow: hidden; border: 1px solid #1E2633; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); background: white; height: 500px;">
+                        <img src="images/rx.png" alt="Ang Ren Xian" style="width: 100%; height: 100%; object-fit: contain; object-position: center; background-color: #ffffff; display: block;">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h2 style="margin: 0;">Featured Projects</h2>
+                    <button class="btn btn-link" onclick="showPage('work')">View All Projects <span>→</span></button>
+                </div>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="images/proj1.png" alt="Project One" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://dev-aquaauraa.pantheonsite.io/" target="_blank" class="view-button">View Website</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Project One</h3>
+                            <p style="font-size: 1rem;">A sleek, minimalist WooCommerce e-commerce site for home wellness products, optimized for performance, usability, and conversion.</p>
+                            <div>
+                                <span class="tag">Wordpress</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">WooCommerce</span>
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">SEO Basics</span>
+                                <span class="tag">Plugin Configuration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="project-image-container">
+                            <img src="images/proj2.png" alt="Project Two" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://renxiannn.github.io/2nd-website/" target="_blank" class="view-button">View Website</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3>Project Two</h3>
+                            <p style="font-size: 1rem;">A modern front-end website developed from scratch using HTML, CSS, and JavaScript, emphasizing responsive design and intuitive user experience.</p>
+                            <div>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Visual Studio Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work" class="page">
+        <div class="container page-content">
+            <h1>My Completed Projects</h1>
+            <div class="work-item">
+                <div>
+                    <h2>Project One</h2>
+                    <p style="font-size: 1.125rem;">A sleek, minimalist WooCommerce e-commerce site for home wellness products, optimized for performance, usability, and conversion.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="tag">Wordpress</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">WooCommerce</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">SEO Basics</span>
+                        <span class="tag">Plugin Configuration</span>
+                        <span class="tag">Visual Studio Code</span>
+                    </div>
+                    <a href="https://dev-aquaauraa.pantheonsite.io/" target="_blank" class="btn btn-primary" style="width: fit-content;">View Live Site <span>↗</span></a>
+                    <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem;">Note: If the preview below is blocked, click the button above to open the site directly.</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="card-preview card-preview-large" style="border-radius: 1rem; padding: 0; overflow: hidden; position: relative; height: 75%; width: 100%;">
+                        <video controls autoplay muted loop
+                            style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0; object-fit: cover;">
+                            <source src="1st proj rec.mp4" type="video/mp4">
+                            </video>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div>
+                    <h2>Project Two</h2>
+                    <p style="font-size: 1.125rem;">A modern front-end website developed from scratch using HTML, CSS, and JavaScript, emphasizing responsive design and intuitive user experience.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Visual Studio Code</span>
+                    </div>
+                    <a href="https://renxiannn.github.io/2nd-website/" target="_blank" class="btn btn-primary" style="width: fit-content;">View Live Site <span>↗</span></a>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="card-preview card-preview-large" style="border-radius: 1rem; padding: 0; overflow: hidden; position: relative; height: 75%; width: 100%;">
+                        <iframe src="https://renxiannn.github.io/2nd-website/" style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;" title="Project Two Preview"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div>
+                    <h2>Project Three</h2>
+                    <p style="font-size: 1.125rem;">A personal finance application using HTML, CSS, and JavaScript, featuring responsive design, data visualization, and smooth user experience.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Visual Studio Code</span>
+                    </div>
+                    <a href="https://renxiannn.github.io/3rd-website/" target="_blank" class="btn btn-primary" style="width: fit-content;">View Live Site <span>↗</span></a>
+                    <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem;">Note: If the preview below is blocked, click the button above to open the site directly.</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="card-preview card-preview-large" style="border-radius: 1rem; padding: 0; overflow: hidden; position: relative; height: 75%; width: 100%;">
+                        <iframe src="https://renxiannn.github.io/3rd-website/" style="width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0;" title="Project Three Preview"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div>
+                    <h2>Project Four</h2>
+                    <p style="font-size: 1.125rem;">A UI/UX design project built entirely in Adobe XD, focusing on engaging layouts, seamless navigation, and user-centered design.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Adobe XD</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Wireframing</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=npl_FIuDoFI" target="_blank" class="btn btn-primary" style="width: fit-content;">View Video <span>↗</span></a>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <div class="card-preview card-preview-large" style="border-radius: 1rem; padding: 0; overflow: hidden; position: relative; height: 75%; width: 100%;">
+                        <video controls style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <source src="Screen Recording 2026-01-22 192456.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div style="margin-top: 3rem; text-align: center;">
+    <button class="btn btn-primary" onclick="showPage('gallery')">View Gallery →</button>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery" class="page">
+        <div class="container page-content">
+            <h1>Gallery</h1>
+            <p style="max-width: 48rem; font-size: 1.25rem; margin-bottom: 2rem;">A collection of preview of my completed projects!</p>
+            <h2>Project One</h2>
+            <div class="grid grid-2" style="margin-bottom: 4rem;">
+                <div class="card"><div class="project-image-container"><img src="images/proj1.png" alt="Project 1 Image 1" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/preoj1.2.png" alt="Project 1 Image 2" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/preoj1.3.png" alt="Project 1 Image 3" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/proj1.4.png" alt="Project 1 Image 4" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/preoj1.5.png" alt="Project 1 Image 5" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/preoj1.6.png" alt="Project 1 Image 6" class="project-image"></div></div>
+            </div>
+            <h2>Project Two</h2>
+            <div class="grid grid-2" style="margin-bottom: 4rem;">
+                <div class="card"><div class="project-image-container"><img src="images/proj2.png" alt="Project 2 Image 1" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/proj2.2.png" alt="Project 2 Image 2" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/proj2.3.png" alt="Project 2 Image 3" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/proj2.4.png" alt="Project 2 Image 4" class="project-image"></div></div>
+                <div class="card"><div class="project-image-container"><img src="images/proj2.5.png" alt="Project 2 Image 5" class="project-image"></div></div>
+            </div>
+            <h2>Project Three</h2>
+            <div class="grid grid-2" style="margin-bottom: 4rem;">
+                <div class="card"><div class="project-image-container"><img src="images/preoj 3.png" alt="Project 3 Image 1" class="project-image"></div></div>
+            </div>
+            <h2>Project Four</h2>
+            <div class="grid grid-2" style="margin-bottom: 4rem;">
+                <div class="card"><div class="project-image-container"><img src="images/proj 4.png" alt="Project 4 Image 1" class="project-image"></div></div>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="page">
+        <div class="container page-content">
+            <h1>My Skills & Expertise</h1>
+            <p style="max-width: 48rem; font-size: 1.25rem;">Crafting Seamless Digital Experiences Through Design and Code</p>
+            <div class="grid grid-2" style="margin-top: 4rem;">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18"/>
+                            </svg>
+                        </div>
+                        <h3 style="margin: 0;">Frontend Development</h3>
+                    </div>
+                    <div>
+                        <span class="tag">PHP</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">HTML</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.5 1.5"/><path d="M14 11l7 7"/><path d="M11 14l7 7"/>
+                            </svg>
+                        </div>
+                        <h3 style="margin: 0;">Design</h3>
+                    </div>
+                    <div>
+                        <span class="tag">Adobe Illustrator</span><span class="tag">Adobe XD</span><span class="tag">Adobe Photoshop</span><span class="tag">UI/UX Design</span><span class="tag">Wireframing</span><span class="tag">Canva</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h3 style="margin: 0;">Tools & Others</h3>
+                    </div>
+                    <div>
+                        <span class="tag">GitHub</span><span class="tag">Microsoft Office</span><span class="tag">Visual Studio Code</span><span class="tag">Wordpress</span><span class="tag">Microsoft Excel</span><span class="tag">Microsoft Word</span><span class="tag">Microsoft PowerPoint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="page">
+        <div class="container-small page-content">
+            <h1>About Me</h1>
+            <div class="profile-image-container">
+                <img src="images/rx.png" alt="Profile Photo" class="profile-image">
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Who I Am</h3>
+                    <p style="font-size: 1rem;">I’m a Higher Nitec IT Application Development student at ITE, passionate about creating practical and user-friendly digital solutions. I enjoy combining design and development skills to build clean, functional interfaces that solve real problems.</p>
+                </div>
+                <div class="about-card">
+                    <h3>My Approach</h3>
+                    <p style="font-size: 1rem;">I believe in creating simple, functional, and user-friendly solutions. I focus on understanding the problem first, then designing interfaces that are intuitive and easy to use. I combine design thinking with practical coding skills, experimenting with different ideas through school projects and personal challenges. My goal is to build digital products that are not only visually clean but also solve real problems effectively.</p>
+                </div>
+                <div class="about-card">
+                    <h3>What I Do</h3>
+                    <p style="font-size: 1rem;">I create practical and user-friendly digital solutions, combining design and development skills to build clean, functional websites and software applications. I focus on intuitive UI/UX design, minimalistic interfaces, and responsive web development using tools like HTML, CSS, JavaScript, and PHP. I also work with databases, backend functionality, and WordPress, developing projects that are both visually appealing and technically sound.</p>
+                </div>
+                <div class="about-card">
+                    <h3>My Goal</h3>
+                    <p style="font-size: 1rem;">My goal is to grow as a software and web developer, building practical digital solutions that are both user-friendly and visually clean. I aim to contribute to real-world projects while continuously improving my technical and design skills.</p>
+                </div>
+            </div>
+            <div class="about-card">
+                <h3>Education</h3>
+                <p style="font-size: 1rem;"><strong>Higher Nitec in IT Application Development</strong><br>Institute of Technical Education (ITE)<br>2025 – 2027</p>
+                <p style="font-size: 1rem;">Currently pursuing a Higher Nitec in IT Application Development, where I am learning web development, programming, UI/UX design, and building practical applications through hands-on projects.<br>Got an award: Director’s List Meritorious Academic Performance</p>
+                <p style="font-size: 1rem;"><strong>Bowen Secondary School (BWSS)</strong><br>2021 - 2024 | GCE N'Levels</p>
+                <p style="font-size: 1rem;">Completed secondary education with 2 Awards : Edusave Good Progress Award<br>Academic Excellence Award In Humanities (Social Studies, Literature In English)</p>
+            </div>
+            <div class="cta-box">
+                <h3>Let's Connect</h3>
+                <button class="btn btn-primary" onclick="showPage('contact')">Get in Touch <span>→</span></button>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="page">
+        <div class="container-small page-content">
+            <h1>Get in Touch</h1>
+            <p style="font-size: 1.25rem;">Have a question in mind or just want to ask some questions? Contact me!</p>
+            <div style="margin-top: 3rem; display: grid; gap: 2rem;">
+                <div class="about-card" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <div class="skill-icon" style="background: rgba(0, 191, 165, 0.1); color: #00BFA5;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.125rem; color: #1E2633;">Email</h3>
+                        <a href="mailto:ang_ren_xian@connect.ite.edu.sg" style="margin: 0; font-size: 1.25rem; color: #4b5563;">ang_ren_xian@connect.ite.edu.sg</a>
+                    </div>
+                </div>
+                <div class="about-card" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <div class="skill-icon" style="background: rgba(0, 191, 165, 0.1); color: #00BFA5;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.125rem; color: #1E2633;">Phone Number</h3>
+                        <p style="margin: 0; font-size: 1.25rem; color: #4b5563;">+65 8827 8053</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
